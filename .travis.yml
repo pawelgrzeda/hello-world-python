@@ -1,0 +1,7 @@
+dist: freebsd
+group: edge
+
+language: python
+
+script:
+  - python hw.py
