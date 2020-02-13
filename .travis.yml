@@ -2,8 +2,6 @@ dist: freebsd
 group: edge
 
 language: python
-python:
-  - "3.8"
 
 script:
   - python hw.py
