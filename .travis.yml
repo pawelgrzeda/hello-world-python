@@ -2,7 +2,8 @@ dist: freebsd
 group: dev
 
 language: python
-
+python:
+  - "nightly"
 script:
   - python hw.py
 
