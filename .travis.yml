@@ -1,4 +1,4 @@
-dist: freebsd
+os: freebsd
 #group: edge
 
 language: python
