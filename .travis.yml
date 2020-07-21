@@ -1,12 +1,15 @@
-os: freebsd
-#group: edge
-
-language: python
-#python:
-#  - "nightly"
-script:
-  - python hw.py
-
-#before_install:
-#  - python --version
-#  - python hw.py
+jobs:
+  include:
+    - os: freebsd
+      language: python
+      script:
+        - python hw.py
+    - os: linux
+      dist: focal
+      arch: amd64
+      virt: lxd
+      group: dev
+      language: python
+      script:
+        - uname -m
+        - python hw.py
